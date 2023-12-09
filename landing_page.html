@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="/landstyle.css">
-
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
         </nav>
         <div class="header-content">
             <h1>
-                The biggest Indian hits. The best Indian stories.
+                The biggest Indian hits. The best Indian stories.All streaming here.
             </h1>
-            <h1>All streaming here.</h1>
+
             <h3>Watch anywhere. Cancel anytime.</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form class="sighnup">
-                <input type="email" placeholder="Email Address" required>
+                <input type="email" placeholder="Email Address" required class="email">
                 <button type="submit">Get Started</button>
             </form>
         </div>
@@ -44,11 +44,11 @@
                 <h1>Enjoy on your TV</h1>
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
-            <div class="tvimg"><img src="/Assets//images/feature-1.png" alt="" width="500"> </div>
+            <div class="tvimg"><img src="/Assets//images/feature-1.png" alt=""> </div>
         </div>
         <div class="downloadshows">
             <div class="dnimg">
-                <img src="/Assets//images/feature-2.png" alt="" width="500">
+                <img src="/Assets//images/feature-2.png" alt="">
             </div>
             <div class="dntext">
                 <h1>Download your shows to watch offline</h1>
@@ -63,13 +63,13 @@
             </div>
             <div class="waimg">
                 <!-- Corrected width attribute placement -->
-                <img src="/Assets/images/feature-3.png" alt="" width="600">
+                <img src="/Assets/images/feature-3.png" alt="">
             </div>
         </div>
 
         <div class="childshows">
             <div class="childimg">
-                <img src="/Assets//images/feature-4.png" alt="" width="500">
+                <img src="/Assets//images/feature-4.png" alt="">
             </div>
             <div class="chtext">
                 <h1>Create profiles for kids</h1>
@@ -120,8 +120,8 @@
 
 
                 <h4 class="h6">Ready to watch? Enter your email to create or restart your membership.</h4>
-                <form class="sighnup2">
-                    <input type="email" placeholder="Email Address" required class="input2">
+                <form class="sighnup">
+                    <input type="email" placeholder="Email Address" required class="email">
                     <button type="submit">Get Started</button>
                 </form>
             </div>
@@ -184,35 +184,6 @@
     </div>
 
 
-    <script>
-        function selectLanguage(language) {
-            var dropdownOptions = document.querySelectorAll('.dropdown-content a');
-            for (var i = 0; i < dropdownOptions.length; i++) {
-                dropdownOptions[i].classList.remove('selected');
-            }
-
-            document.getElementById('selected-language').innerText = language;
-            document.querySelector('.button-container').classList.remove('open');
-            var selectedOption = document.querySelector('.dropdown-content a[href="#"][onclick="selectLanguage(\'' + language + '\')"]');
-            selectedOption.classList.add('selected');
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('language-button').addEventListener('click', function () {
-                document.querySelector('.button-container').classList.toggle('open');
-            });
-        });
-
-        function toggleAnswer(questionId) {
-            var answer = document.getElementById(questionId);
-
-            if (answer.style.display === 'block') {
-                answer.style.display = 'none';
-            } else {
-                answer.style.display = 'block';
-            }
-        }
-    </script>
 </body>
 
 </html>

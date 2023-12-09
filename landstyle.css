@@ -22,6 +22,12 @@ background-blend-mode: multiply;
   background-position: center;
   padding: 10px 8%;
   position: relative;
+
+
+
+   display: flex;
+   flex-direction: column;
+  
 }
 nav {
   display: flex;
@@ -97,7 +103,9 @@ border-radius: 4px;
 }
 
 .header-content{
- position: absolute;
+ position: relative;
+ display: flex;
+ flex-direction: column;
  text-align: center;
  top: 50%;
  left: 50%;
@@ -125,21 +133,15 @@ border-radius: 4px;
 p{
   font-size: 25px;
 }
-.sighnup{
-
-  width: 720px;
-  display: flex;
-  border-radius: 4px;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 350px;
- overflow: hidden;
- backdrop-filter: blur(10px); /* Adjust the value for the desired level of blur */
- background-color: rgba(28, 26, 26, 0.5); 
+.sighnup {
+margin-top: 40px;
+flex-direction: row;
 }
 
- input{
-  
+.email{
+ 
+  background: rgba(0, 0, 0, 0.2); 
+  width: 35%;
   flex: 1;
   border: 0;
   outline: 0;
@@ -162,14 +164,14 @@ input:focus {
 }
 
 form button{
+  width: 20%;
   height: 60px;
-  width: 270px;
   background: #db0001;
   border: 0;
   outline: 0;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 30px;
   border-radius: 4px;
   font-size: 20px;
@@ -178,7 +180,7 @@ form button{
 
 
 .tv{
-  padding: 80px;
+  padding: 50px;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -193,74 +195,82 @@ form button{
 }
 .tvtext p{
   font-size: 15px;
+  line-height: 2;
 }
-.tvimg{
-  width: 70px;
-  background: #d1cccc;
+.tv img{
+  width: 500px;
+  
 }
 .downloadshows{
-  padding: 80px;
+  padding: 50px;
   display: flex;
   align-items: center;
   background: black;
   margin-bottom: 10px;
 
 }
+
+.dnimg img{
+  width: 500px;
+}
 .dntext{
-  line-height: 40px;
+  line-height: 1.5;
  }
  .dntext h1{
   font-weight: bold;
  }
  .dntext p{
+  margin-top: 10px;
   font-size: 15px;
+  line-height: 2;
  }
  .watch{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: black;
-  padding: 80px;
+  padding: 50px;
  }
- .waimg{
-  padding-top:100px;
-  margin-right:90px;
+ .waimg img{
+  width: 500px;
+  
  }
- .wtext{
-  margin-left: 70px;
-  line-height: 40px;
- }
+ 
  .wtext h1{
   font-weight: bold;
  }
  .wtext p{
+  margin-top: 20px;
   font-size:15px; 
+  line-height: 2;
  }
 
  .childshows{
   margin-top: 10px;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   align-items: center;
   background: black;
   margin-bottom: 10px;
  }
-
+ .childimg img{
+  width: 500px;
+ }
  .chtext{
   margin-left: 20px;
  }
  .chtext h1{
   font-size: 3rem;
- font-weight: 900;
- line-height: 50px;
+ font-weight: bolder;
+ 
  }
  .chtext p{
   margin-top: 10px;
   font-size: 1.3rem;
-  font-weight: 400;
+  line-height: 2;
  }
 .quest{
-  padding: 80px;
+  padding: 150px;
   margin-top: 10px;
   background: black;
  
@@ -274,12 +284,10 @@ font-weight: 900;
   align-items: center;
   margin-top: 20px;
   align-items: center;
-  justify-content: center;
  
   text-align: center;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -287,8 +295,6 @@ font-weight: 900;
 
 
 .q{
-  margin-right: 120px;
-  margin-left: 120px;
   cursor: pointer;
   margin-top: 10px;
   color: rgb(235, 235, 241);
@@ -297,10 +303,7 @@ font-weight: 900;
   padding: 30px;
 
 }
-
 .answer {
-  margin-right: 120px;
-  margin-left: 120px;
   display: none;
   background-color: rgb(44, 40, 40);
   margin-top:3px ;
@@ -318,56 +321,6 @@ font-weight: 900;
   font-size: 1.5rem;
 font-weight: 400;
 line-height: 1.5;
-
-}
-.sighnup2{
-  width: 650px;
-  display: flex;
-  border-radius: 4px;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 310px;
- overflow: hidden;
- backdrop-filter: blur(10px); /* Adjust the value for the desired level of blur */
- background-color: rgba(28, 26, 26, 0.5); 
-}
-
-.input2{
-  
-  flex: 1;
-  border: 0;
-  outline: 0;
-  height: 60px;
-  padding-left: 10px;
-  font-size: 15px;
-  font-family:sans-serif;
-  color: #fff;
-  background: transparent;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s ease-out;
- 
-}
-.input2:focus {
-  border-color: #fff;
- 
-  border: 4px solid #ccc;
-  border-radius: 4px;
-}
-
-.sighnup2 button{
-  height: 60px;
-  width: 270px;
-  background: #db0001;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 15px 30px;
-  border-radius: 4px;
-  font-size: 20px;
-
 }
 .Footer{
   margin-top: 10px;
@@ -378,18 +331,15 @@ line-height: 1.5;
 padding: 80px;
 }
 .Footer p{
-  
-  margin-left: 120px;
-
-  font-size: 15px;
-  margin-bottom: 20px;
+margin-left: 20px;
+font-size: 15px;
+ 
 }
 .flex{
   display: flex;
   justify-content: space-between;
   margin-top: 4px;
-  margin-right: 400px;
-  margin-left: 100px;
+  
   
 }
 .insideflex li {
@@ -407,5 +357,105 @@ padding: 80px;
 
 }
 .Footer h5{
-  margin-left: 120px;
+margin-left: 20px;
+}
+
+
+@media (max-width: 600px) {
+ 
+  .header-content h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .header-content p{
+    font-size: 15px;
+  }
+  .email{
+    width: 40%;
+  }
+
+  .sighnup button {
+   width: 25%;
+   font-size: 12px;
+   padding: 0px;
+  }
+
+
+
+.banners{
+  width: 100%;
+}
+
+
+
+
+
+
+ .tvtext p{
+   font-size: 10px;
+ }
+ .tv img{
+   width: 250px;
+   background: #d1cccc;
+ }
+ 
+ .dnimg img{
+  width: 250px;
+ }
+
+  .dntext h1{
+   font-weight: bold;
+   font-size: 25px;
+   
+  }
+  .dntext p{
+   font-size: 10px;
+  }
+  
+  .waimg img{
+    width: 240px; 
+   }
+  
+  
+  .wtext p{
+   font-size:10px; 
+  }
+ 
+  
+  .childimg img{
+    width: 250px;
+    margin-left: 0px;
+  }
+  
+  .chtext h1
+  {
+    font-size: 25px;
+  }
+
+  .chtext p{
+   margin-top: 10px;
+   font-size: 10px;
+   
+  }
+ .quest{
+  padding: 90px;
+ }
+ .quest h1{
+ font-size: 1.5rem;
+ font-weight: 900;
+ }
+  .questions{
+   font-size: 0.7rem;
+   font-weight: 700;
+ }
+ 
+
+ 
+
+ .h6{
+
+ font-size: 0.8rem;
+
+ }
+ 
 }
